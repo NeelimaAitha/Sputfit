@@ -1,7 +1,5 @@
 import React, { forwardRef } from "react";
-
 import "./index.css";
-
 const EmotionCard = forwardRef((props, ref) => {
   const { emotionDetails, isHilighted } = props;
   const { title, description, imageUrl, cardColor } = emotionDetails;
