@@ -1,8 +1,6 @@
 import { HiOutlineViewList } from "react-icons/hi";
 import { useState } from "react";
-
 import "./index.css";
-
 const Header = () => {
   const [showNavs, setShowNavs] = useState(false);
   return (
