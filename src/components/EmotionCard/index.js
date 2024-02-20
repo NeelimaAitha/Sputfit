@@ -20,5 +20,4 @@ const EmotionCard = forwardRef((props, ref) => {
     </li>
   );
 });
-
 export default EmotionCard;
