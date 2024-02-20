@@ -1,6 +1,7 @@
 import {useRef, useEffect} from 'react'
 
-import imageSrc from './image.jpg'; 
+import imageUrl from './yourImage.jpg';
+import { gsap } from 'gsap';
 
 import WorkingWithUsRightCardItem from '../WorkingWithUsRightCardItem'
 
@@ -37,18 +38,19 @@ const WorkWithUs = () => {
   const workWithTitleRef = useRef(null)
   const workWithSideTitleRef = useRef(null)
  const imageRef = useRef(null);
+const imageRef = useRef(null);
 
   useEffect(() => {
     const image = imageRef.current;
 
-    const moveImage = () => {
-      image.style.transform = 'translateX(200px)'; // Move image 200px to the right
-    };
-
-    setTimeout(moveImage, 1000); // Trigger moveImage function after 1 second
+    gsap.fromTo(
+      image,
+      { x: '-100%' },
+      { x: '0%', duration: 2, ease: 'power3.out' }
+    );
   }, []);
 
-  return <img ref={imageRef} src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNUHHhmODkp6LXZiHf1FRJNpV3ukrlxjHgNMQTNQ46WNCTL5RV0ACYYWt_HrbfX08YLms&usqp=CAU'} alt="Animated" className="animated-image" />;
+  return <img ref={imageRef} src={https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNUHHhmODkp6LXZiHf1FRJNpV3ukrlxjHgNMQTNQ46WNCTL5RV0ACYYWt_HrbfX08YLms&usqp=CAU} alt="Animated" className="animated-image" />;
 
   return (
     <div className="work-with-us-container">
