@@ -1,5 +1,6 @@
 import {useRef, useEffect} from 'react'
-import {gsap} from 'gsap'
+
+import imageSrc from './image.jpg'; 
 
 import WorkingWithUsRightCardItem from '../WorkingWithUsRightCardItem'
 
