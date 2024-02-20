@@ -91,3 +91,7 @@
   background-color: #ffffff;
   border-radius: 5px;
 }
+
+.animated-image {
+  transition: transform 1s ease-in-out; /* Transition for smooth movement */
+}
