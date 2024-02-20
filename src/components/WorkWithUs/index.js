@@ -49,7 +49,7 @@ const WorkWithUs = () => {
   }, []);
 
   return <img ref={imageRef} src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNUHHhmODkp6LXZiHf1FRJNpV3ukrlxjHgNMQTNQ46WNCTL5RV0ACYYWt_HrbfX08YLms&usqp=CAU'} alt="Animated" className="animated-image" />;
-};
+
   return (
     <div className="work-with-us-container">
       <header className="work-with-us-header">
