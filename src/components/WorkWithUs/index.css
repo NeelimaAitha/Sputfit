@@ -1,149 +1,137 @@
-.work-with-us-container {
-  background-color: #f1edfd;
-  display: flex;
-  flex-direction: column;
-  margin: 40px;
-  border-radius: 30px;
-  padding: 50px;
-  height: 120vh;
-}
-
-.work-with-us-image {
-  width: 80px;
-  height: 80px;
-}
-
-@media screen and (max-width: 767px) {
-  .work-with-us-container {
-    margin: 20px;
-    padding: 20px;
-    height: 100%;
-  }
-}
-
-.work-with-us-header {
+.nav-container {
+  min-height: 10vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-@media screen and (max-width: 767px) {
-  .work-with-us-header {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-}
-
-.work-with-us-title {
-  font-size: 45px;
-  color: #000000;
-}
-
-@media screen and (max-width: 767px) {
-  .work-with-us-title {
-    font-size: 35px;
-    margin-bottom: 10px;
-  }
-}
-
-.work-with-us-side-title {
-  font-size: 45px;
-  font-weight: 600;
-  color: #661ff2;
-}
-
-@media screen and (max-width: 767px) {
-  .work-with-us-side-title {
-    font-size: 35px;
-    margin-top: 0px;
-  }
-}
-
-.work-with-us-cards {
-  display: flex;
-  justify-content: space-between;
-  height: 80%;
-}
-
-@media screen and (max-width: 767px) {
-  .work-with-us-cards {
-    flex-direction: column;
-  }
-}
-
-.work-with-us-left-card {
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  box-shadow: 0px 4px 16px 0px #efeded;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
   background-color: #ffffff;
-  border-radius: 15px;
-  width: 50%;
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 @media screen and (max-width: 767px) {
-  .work-with-us-left-card {
-    width: 100%;
-    margin-bottom: 30px;
+  .nav-container {
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
-.about-card {
-  padding: 30px;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
 }
 
-.about-product-text {
-  font-size: 20px;
-  font-weight: 500;
-  color: #000000;
-  margin-bottom: 10px;
+.website-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-.product-card {
-  background-color: #fef6f2;
-  padding: 30px;
-  border-radius: 15px;
+@media screen and (max-width: 767px) {
+  .website-logo {
+    width: 40px;
+    height: 40px;
+  }
 }
 
-.product-about-description {
-  font-size: 18px;
-  line-height: 28px;
-  color: #605e5e;
-  margin-top: 0px;
-}
-
-.work-with-us-right-card {
+.nav-items {
+  display: flex;
   list-style-type: none;
-  padding: 0px;
-  margin-top: 0px;
-  width: 30%;
-  height: 100%;
-  overflow: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-decoration: none;
+  color: #000000;
 }
 
 @media screen and (max-width: 767px) {
-  .work-with-us-right-card {
-    width: 100%;
+  .nav-items {
+    display: none;
   }
 }
 
-::-webkit-scrollbar {
-  width: 5px;
+.nav-list-item {
+  margin-right: 30px;
 }
 
-::-webkit-scrollbar-thumb {
-  background: #baa6f7;
-  border-radius: 5px;
+.download-app-btn {
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  cursor: pointer;
+  outline: none;
+  font-size: 15px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #a588fc;
+@media screen and (max-width: 767px) {
+  .download-app-btn {
+    height: 25px;
+    font-size: 12px;
+    padding: 15px;
+    margin-right: 10px;
+  }
 }
 
-::-webkit-scrollbar-track {
-  background-color: #ffffff;
-  border-radius: 5px;
+.download-nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list-icon {
+  display: none;
+}
+
+.toggle-btn {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-list-icon {
+    display: block;
+  }
+
+  .toggle-btn {
+    display: inline-block;
+    border: none;
+    padding: 5px;
+    background-color: transparent;
+    outline: none;
+  }
+}
+
+.mobile-nav-items-container {
+  padding-top: 13vh;
+  display: none;
+  background-color: #f0eeee;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-nav-items-container {
+    display: block;
+  }
+}
+
+.mobile-nav-list-item {
+  margin-bottom: 20px;
+}
+
+.mobile-nav-items {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.mobile-nav-item {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000000;
 }
