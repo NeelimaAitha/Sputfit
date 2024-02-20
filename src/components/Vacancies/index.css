@@ -4,16 +4,34 @@
   padding: 50px;
 }
 
+@media screen and (max-width: 767px) {
+  .vacancies-container {
+    padding: 20px;
+    margin: 20px;
+  }
+}
+
 .vacancies-title {
-  font-size: 47px;
+  font-size: 45px;
   color: #000000;
-  font-family: 'Roboto';
+  font-family: "Roboto";
+}
+
+@media screen and (max-width: 767px) {
+  .vacancies-title {
+    font-size: 30px;
+  }
 }
 
 .vacancies-list {
   list-style-type: none;
   padding: 0px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .vacancies-list {
+    flex-direction: column;
+  }
 }
