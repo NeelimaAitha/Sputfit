@@ -5,7 +5,6 @@
   border-top: solid 2px #f3f1f5;
   padding: 40px;
 }
-
 @media screen and (max-width: 767px) {
   .footer-container {
     padding: 20px;
