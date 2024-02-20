@@ -2,7 +2,7 @@ import { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { useIntersection } from "react-use";
 
-import WorkWithUsRightCardItem from "../WorkWithUsRightCardItem";
+import WorkWithUsRightCardItem from "../WorkingWithUsRightCardItem";
 
 import "./index.css";
 
