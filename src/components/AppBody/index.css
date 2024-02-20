@@ -1,7 +1,6 @@
 .app-body {
   padding-top: 12vh;
 }
-
 @media screen and (max-width: 767px) {
   .app-body {
     padding-top: 5vh;
