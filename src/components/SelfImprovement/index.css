@@ -6,6 +6,13 @@
   margin: 100px;
 }
 
+@media screen and (max-width: 767px) {
+  .self-improvement-container {
+    margin: 0px;
+    padding: 20px;
+  }
+}
+
 .self-improvement-header {
   align-self: flex-start;
 }
@@ -15,6 +22,12 @@
   color: #000000;
 }
 
+@media screen and (max-width: 767px) {
+  .self-improvement-top-title {
+    font-size: 14px;
+  }
+}
+
 .self-improvement-title {
   font-size: 45px;
   color: #000000;
@@ -22,9 +35,21 @@
   margin-top: 0px;
 }
 
+@media screen and (max-width: 767px) {
+  .self-improvement-title {
+    font-size: 30px;
+  }
+}
+
 .self-improvement-timeline {
   width: 80%;
   padding: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .self-improvement-timeline {
+    width: 100%;
+  }
 }
 
 .timeline-container {
@@ -61,7 +86,7 @@
 }
 
 .timeline-container::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 3px;
   top: 45px;
@@ -72,18 +97,43 @@
 }
 
 .be-the-best-container {
-  height: 100vh;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .be-the-best-container {
+    flex-direction: column;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: flex-start;
+  }
 }
 
 .be-the-best-container h3 {
   font-size: 30px;
 }
 
+@media screen and (max-width: 767px) {
+  .be-the-best-container h3 {
+    font-size: 25px;
+  }
+}
+
 .be-the-best-container p {
   width: 30%;
   line-height: 30px;
   font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  .be-the-best-container p {
+    width: 100%;
+    line-height: 30px;
+    font-size: 16px;
+  }
 }
