@@ -1,7 +1,6 @@
 import { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { useIntersection } from "react-use";
-
 import "./index.css";
 
 const HomePage = () => {
