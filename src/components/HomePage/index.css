@@ -23,7 +23,6 @@
   flex-direction: column;
   justify-content: center;
 }
-
 @media screen and (max-width: 767px) {
   .home-content {
     width: 100%;
@@ -43,7 +42,6 @@
   color: #000000;
   margin-bottom: 10px;
 }
-
 @media screen and (max-width: 767px) {
   .home-head {
     font-size: 30px;
@@ -70,7 +68,6 @@
 .five-star-image {
   width: 150px;
 }
-
 @media screen and (max-width: 767px) {
   .five-star-image {
     width: 120px;
@@ -81,7 +78,6 @@
   margin-top: 0px;
   font-size: 15px;
 }
-
 @media screen and (max-width: 767px) {
   .rating {
     font-size: 13px;
