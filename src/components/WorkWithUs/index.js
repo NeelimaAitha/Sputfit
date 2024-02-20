@@ -35,18 +35,20 @@ const workWithUsLeftCardDetails = [
 const WorkWithUs = () => {
   const workWithTitleRef = useRef(null)
   const workWithSideTitleRef = useRef(null)
+ const imageRef = useRef(null);
+
   useEffect(() => {
-    gsap.from(workWithTitleRef.current, {
-      duration: 2,
-      x: '-100%',
-      ease: 'back.out(1.7)',
-    })
-    gsap.from(workWithSideTitleRef.current, {
-      duration: 2,
-      x: '100%',
-      ease: 'back.out(1.7)',
-    })
-  }, [])
+    const image = imageRef.current;
+
+    const moveImage = () => {
+      image.style.transform = 'translateX(200px)'; // Move image 200px to the right
+    };
+
+    setTimeout(moveImage, 1000); // Trigger moveImage function after 1 second
+  }, []);
+
+  return <img ref={imageRef} src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNUHHhmODkp6LXZiHf1FRJNpV3ukrlxjHgNMQTNQ46WNCTL5RV0ACYYWt_HrbfX08YLms&usqp=CAU'} alt="Animated" className="animated-image" />;
+};
   return (
     <div className="work-with-us-container">
       <header className="work-with-us-header">
